@@ -7,6 +7,7 @@ import AboutMe from "@/components/AboutMe";
 import Introduction from "@/components/Introduction";
 import Footer from "@/components/Footer";
 import { useRef } from "react";
+import Testimonials from "@/components/Testimonials";
 export default function Home() {
   const aboutref= useRef(null);
   const introductionref = useRef(null);
@@ -31,6 +32,7 @@ export default function Home() {
               <Introduction ref={introductionref}/>
               <AboutMe ref={aboutref}/>
               <Services ref={serviceref}/>
+              <Testimonials/>
               <Contact ref={contactref}/>
               <Footer/>
       </div>
