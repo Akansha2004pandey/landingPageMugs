@@ -13,15 +13,18 @@ export default function Home() {
   const serviceref= useRef(null);
   const  contactref= useRef(null);
   const handleScrollToSection = (ref) => {
+  
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
+  
   };
   return (
    <main>
       <div>   
               
-              <Navbar servicerefrefref={serviceref} 
+              <Navbar handleScrollToSection={handleScrollToSection}
+              serviceref={serviceref} 
         aboutref={aboutref} 
         introductionref={introductionref} 
         contactref={contactref}/>

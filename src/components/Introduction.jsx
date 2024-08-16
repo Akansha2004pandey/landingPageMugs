@@ -3,7 +3,7 @@ import  styles from "@/styles/Contact.module.css"
 import Image from 'next/image'
 import About from "../../public/images/man.png"
 import Icons from './icons'
-const Introduction = forwardRef((props,ref) => {
+const Introduction = React.forwardRef((props,ref) => {
   return (
     <div className={`flex mx-auto justify-center items-center my-20 ${styles.form}`} ref={ref} id="introduction">
       <div className='w-2/5 flex flex-col  min-w-[400px] pb-10'>

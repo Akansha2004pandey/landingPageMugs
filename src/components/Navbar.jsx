@@ -27,7 +27,7 @@ const Navbar = ({ handleScrollToSection, serviceref, aboutref, introductionref, 
         <ul className={`lg:flex items-center ${navOpen ? 'block' : 'hidden'} absolute lg:static left-0 top-[120px] z-10 w-full lg:w-auto lg:bg-transparent bg-white lg:p-0 p-4 lg:shadow-none shadow-md lg:rounded-none rounded-lg`}>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1'><a href="#" onClick={() => handleScrollToSection(introductionref)}>Home</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '><a href="#about" onClick={() => handleScrollToSection(aboutref)}>About Me</a></li>
-          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '><a href="#service" onClick={() => handleScrollToSection(servicerefref)}>Services</a></li>
+          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '><a href="#service" onClick={() => handleScrollToSection(serviceref)}>Services</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '>Projects</li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '>Testimonials</li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '><a href="#contact" onClick={() => handleScrollToSection(contactref)}>Contact</a></li>

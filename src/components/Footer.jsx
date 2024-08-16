@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Logo from "../../public/images/Logo.png"
 import Icons from './icons'
 import styles from "@/styles/Contact.module.css"
-const Footer = forwardRef((props,ref) => {
+const Footer = React.forwardRef((props,ref) => {
   return (
     <div className='flex flex-col items-center justify-center pt-10 mt-10 bg-[#F8F8F8]' ref={ref} id="footer">
                 <Image src={Logo} alt="Logo" width={279} height={67} className='min-w-[160px]' />

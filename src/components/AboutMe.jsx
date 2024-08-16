@@ -3,7 +3,7 @@ import Image from 'next/image'
 import About from "../../public/images/about.png"
 import  styles from "@/styles/Contact.module.css"
 import { useRef, forwardRef } from 'react'
-const AboutMe =forwardRef((props,ref) => {
+const AboutMe =React.forwardRef((props,ref) => {
   return (
     <div className={`flex mx-auto justify-center my-20 ${styles.form}`} ref={ref} id="about">
     

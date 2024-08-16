@@ -5,7 +5,7 @@ import image2 from "../../public/images/image2.png"
 import image3 from "../../public/images/image3.png"
 import image4 from "../../public/images/image4.png"
 import {useRef, forwardRef } from 'react'
-const Services = forwardRef((props,ref) => {
+const Services = React.forwardRef((props,ref) => {
     const data=[
         {name:"UI/UX",
          image:image1
