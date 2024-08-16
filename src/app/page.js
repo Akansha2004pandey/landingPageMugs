@@ -13,6 +13,7 @@ export default function Home() {
   const introductionref = useRef(null);
   const serviceref= useRef(null);
   const  contactref= useRef(null);
+  const testimonialsref=useRef(null);
   const handleScrollToSection = (ref) => {
   
     if (ref && ref.current) {
@@ -28,11 +29,12 @@ export default function Home() {
               serviceref={serviceref} 
         aboutref={aboutref} 
         introductionref={introductionref} 
-        contactref={contactref}/>
+        contactref={contactref}
+        testimonialsref={testimonialsref}/>
               <Introduction ref={introductionref}/>
               <AboutMe ref={aboutref}/>
               <Services ref={serviceref}/>
-              <Testimonials/>
+              <Testimonials ref={testimonialsref}/>
               <Contact ref={contactref}/>
               <Footer/>
       </div>

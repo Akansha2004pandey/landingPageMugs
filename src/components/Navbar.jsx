@@ -4,7 +4,7 @@ import Image from 'next/image';
 import image from "../../public/images/Logo.png";
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const Navbar = ({ handleScrollToSection, serviceref, aboutref, introductionref, contactref }) => {
+const Navbar = ({ handleScrollToSection, serviceref, aboutref, introductionref, contactref,testimonialsref }) => {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -29,7 +29,7 @@ const Navbar = ({ handleScrollToSection, serviceref, aboutref, introductionref, 
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 cursor-pointer'><a href="#about" onClick={() => handleScrollToSection(aboutref)}>About Me</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 cursor-pointer'><a href="#service" onClick={() => handleScrollToSection(serviceref)}>Services</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 cursor-pointer'>Projects</li>
-          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 cursor-pointer'>Testimonials</li>
+          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 cursor-pointer'><a href="#testimonials" onClick={() => handleScrollToSection(testimonialsref)}>Testimonials</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 cursor-pointer'><a href="#contact" onClick={() => handleScrollToSection(contactref)}>Contact</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-3 cursor-pointer text-white py-1 bg-[#FD6F00] rounded-sm'>Download CV</li>
         </ul>

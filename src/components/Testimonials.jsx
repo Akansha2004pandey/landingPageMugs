@@ -4,10 +4,11 @@ import '@splidejs/splide/dist/css/splide.min.css';
 import { reviews } from './ReviewsData';
 import Quote from "../../public/images/blockquote.svg"
 import Image from 'next/image';
-const Testimonials = () => {
+import { forwardRef,useRef } from 'react';
+const Testimonials = forwardRef((props,ref) => {
   return (
-    <div>
-       <div className='flex flex-col items-center justify-center pt-20 pb-20'>
+    <div ref={ref} id="testimonials">
+       <div className='flex flex-col items-center justify-center pt-20 pb-20' >
        <div className='text-[65px] font-Poppins leading-97.5px tracking-3percent text-center font-semibold mb-3'>
            Testimonials
        </div>
@@ -54,6 +55,7 @@ const Testimonials = () => {
     </div>
     </div>
   )
-}
+})
+Testimonials.displayName="Testimonials";
 
 export default Testimonials
