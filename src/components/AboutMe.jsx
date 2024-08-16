@@ -36,5 +36,5 @@ const AboutMe =React.forwardRef((props,ref) => {
     </div>
   )
 })
-
+AboutMe.displayName = "AboutMe";
 export default AboutMe

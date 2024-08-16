@@ -14,5 +14,5 @@ const Contact =React.forwardRef ((props,ref) => {
     </div>
   )
 })
-
+Contact.displayName="Contact";
 export default Contact

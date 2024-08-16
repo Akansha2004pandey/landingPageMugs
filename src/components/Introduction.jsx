@@ -25,5 +25,5 @@ const Introduction = React.forwardRef((props,ref) => {
     </div>
   )
 })
-
+Introduction.displayName="Introduction"
 export default Introduction
