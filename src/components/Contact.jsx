@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useRef, forwardRef } from 'react'
 import styles from "@/styles/Contact.module.css"
-const Contact = () => {
+const Contact =forwardRef ((props,ref) => {
   return (
-    <div className='flex flex-col items-center justify-center pt-20 pb-20'>
+    <div className='flex flex-col items-center justify-center pt-20 pb-20' ref={ref} id="contact">
        <div className='text-[65px] font-Poppins leading-97.5px tracking-3percent text-center font-semibold mb-3'>
            Lets Design Together
        </div>
@@ -13,6 +13,6 @@ const Contact = () => {
        </form>
     </div>
   )
-}
+})
 
 export default Contact

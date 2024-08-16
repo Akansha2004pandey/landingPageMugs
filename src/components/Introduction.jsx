@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useRef,forwardRef } from 'react'
 import  styles from "@/styles/Contact.module.css"
 import Image from 'next/image'
 import About from "../../public/images/man.png"
 import Icons from './icons'
-const Introduction = () => {
+const Introduction = forwardRef((props,ref) => {
   return (
-    <div className={`flex mx-auto justify-center items-center my-20 ${styles.form}`} >
+    <div className={`flex mx-auto justify-center items-center my-20 ${styles.form}`} ref={ref} id="introduction">
       <div className='w-2/5 flex flex-col  min-w-[400px] pb-10'>
          <div className='text-[24px] font-semibold tracking-3percent leading-31.5px font-poppins'>Hi I am</div>
          <div className='text-[32px] font-semibold tracking-3percent leading-31.5px font-poppins pt-2 text-orange-500'>Muhammad Umair</div>
@@ -24,6 +24,6 @@ const Introduction = () => {
       </div>
     </div>
   )
-}
+})
 
 export default Introduction

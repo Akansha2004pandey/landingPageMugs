@@ -4,8 +4,8 @@ import image1 from "../../public/images/image1.png"
 import image2 from "../../public/images/image2.png"
 import image3 from "../../public/images/image3.png"
 import image4 from "../../public/images/image4.png"
-
-const Services = () => {
+import {useRef, forwardRef } from 'react'
+const Services = forwardRef((props,ref) => {
     const data=[
         {name:"UI/UX",
          image:image1
@@ -21,7 +21,7 @@ const Services = () => {
         },
     ]
   return (
-    <div className='flex flex-col justify-center items-center pt-20'>
+    <div className='flex flex-col justify-center items-center pt-20' ref={ref} id="service">
         <div className='text-[65px] font-semibold tracking-3percent leading-97.5px font-poppins'>Services</div>
         <div className='text-[21px] tracking-3percent leading-31.5px font-poppins pb-10 text-center max-w-[800px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, adipisci.</div>
         <div className='flex mx-auto justify-center flex-wrap '>
@@ -43,5 +43,5 @@ const Services = () => {
     </div>
   )
 }
-
+)
 export default Services

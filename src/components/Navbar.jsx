@@ -4,7 +4,7 @@ import Image from 'next/image';
 import image from "../../public/images/Logo.png";
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ handleScrollToSection, serviceref, aboutref, introductionref, contactref }) => {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -25,12 +25,12 @@ const Navbar = () => {
         </div>
 
         <ul className={`lg:flex items-center ${navOpen ? 'block' : 'hidden'} absolute lg:static left-0 top-[120px] z-10 w-full lg:w-auto lg:bg-transparent bg-white lg:p-0 p-4 lg:shadow-none shadow-md lg:rounded-none rounded-lg`}>
-          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1'>Home</li>
-          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '>About Me</li>
-          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '>Services</li>
+          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1'><a href="#" onClick={() => handleScrollToSection(introductionref)}>Home</a></li>
+          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '><a href="#about" onClick={() => handleScrollToSection(aboutref)}>About Me</a></li>
+          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '><a href="#service" onClick={() => handleScrollToSection(servicerefref)}>Services</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '>Projects</li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '>Testimonials</li>
-          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '>Contact</li>
+          <li className='text-[21px] font-normal tracking-3percent px-2 mx-1 '><a href="#contact" onClick={() => handleScrollToSection(contactref)}>Contact</a></li>
           <li className='text-[21px] font-normal tracking-3percent px-2 mx-3 text-white py-1 bg-[#FD6F00] rounded-sm'>Download CV</li>
         </ul>
       </div>
