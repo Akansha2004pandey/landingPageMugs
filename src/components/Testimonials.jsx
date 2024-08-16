@@ -1,7 +1,7 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
-import { reviews } from './ReviewsData';
+import { reviews } from './utils/ReviewsData';
 import Quote from "../../public/images/blockquote.svg"
 import Image from 'next/image';
 import { forwardRef,useRef } from 'react';
